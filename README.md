@@ -1,3 +1,3 @@
 # WWW-Projekti
-Van Gough 2.0
+Van Gogh 2.0
 
