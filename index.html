@@ -2,26 +2,97 @@
 <html lang="fi">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Klausin Valinta</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Klausin Valinta</title>
 </head>
+
+
 <body>
-	<header role="banner">
-		<h1>Klausin Valinta</h1>
-		<nav role="navigation"> 
-		<ul>
-		  <li><a href="./contact.html">Yhteystiedot</a></li>
-		  <li><a href="./FAQ.html">UKK</a></li> 
-		  <li><a href="./links.html">Linkkejä</a></li> 
-		</nav>
-	</header>
-	<article>
-		<h2>Yrityksen Visio</h2>
-		<p>Me Klausin Valinnassa uskomme perunan parantavaan voimaan. Haluammekin siis jakaa ilokokemuksemme koko maailman kanssa kohtuullista korvausta vastaan.<br> Tervetuloa perunoiden maailmaan!</p>
-	</article>
-	<footer role="contentinfo">
-		<p>&copy; PTIETS17, R1</p>
-	</footer>
+	<!-- MDL Fixed Layout Container -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<!-- Header Container -->
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title  of Header -->
+				<span class="mdl-layout-title">Klausin Valinta</span>
+			</div>
+			<!-- Tab Bar Container , and Tab links -->
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Koti</a>
+				<a href="#scroll-tab-2" class="mdl-layout__tab">Yhteystiedot</a>
+				<a href="#scroll-tab-3" class="mdl-layout__tab">UKK</a>
+				<a href="#scroll-tab-4" class="mdl-layout__tab">Linkkejä</a>
+			</div>
+		</header>
+		<!-- MDL Layout Header -->
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+		</div>
+		<main class="mdl-layout__content">
+
+			<!-- "is-active" class to set the default active tab -->
+			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+				<div class="page-content">
+					<h2>Yrityksen Visio</h2>
+					<p>Me Klausin Valinnassa uskomme perunan parantavaan voimaan. Haluammekin siis jakaa ilokokemuksemme koko maailman kanssa
+						kohtuullista korvausta vastaan.
+						<br> Tervetuloa perunoiden maailmaan!</p>
+				</div>
+			</section>
+
+			<!-- Tab No 2-->
+			<section class="mdl-layout__tab-panel" id="scroll-tab-2">
+				<div class="page-content">
+					<h2>Yhteystiedot</h2>
+					<ul style="list-style-type:square">
+						<li>Toimitusjohtaja, toimitusjohtaja@perunamail.com</li>
+						<li>Markkinointivastaava, markkinat@perunamail.com</li>
+						<li>Myyntivastaava, myynnit@perunamail.com </li>
+					</ul>
+
+				</div>
+			</section>
+
+			<!-- Tab No 3-->
+			<section class="mdl-layout__tab-panel" id="scroll-tab-3">
+				<div class="page-content">
+					<h2>Usein kysytyt kysymykset</h2>
+					<ul style="list-style-type:square">
+						<li>Onko peruna turvallista?</li>
+						<li>Miten valmistaa perunat?</li>
+						<li>Olenko peruna?</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<!-- Tab No 4-->
+			<section class="mdl-layout__tab-panel" id="scroll-tab-4">
+				<div class="page-content">
+					<h2>Linkkejä</h2>
+					<ul style="list-style-type:square">
+						<li>
+							<a href="https://fi.wikipedia.org/wiki/Peruna">Peruna (Wikipedia)</a>
+						</li>
+						<li>
+							<a href="http://www.tarhuri.fi/kasvit/peruna/">Peruna kasvatus (tarhuri.fi)</a>
+						</li>
+						<li>
+							<a href="http://www.spk.fi/perunan_historiaa_suomessa">Perunan historia (spk.fi)</a>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+
+		</main>
+	</div>
+
 </body>
+
 </html>
