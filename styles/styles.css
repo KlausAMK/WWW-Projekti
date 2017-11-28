@@ -9,6 +9,23 @@
     background-color: #f3f3f3;
 }
 
+
+@media screen and (max-width: 540px) {
+	.mdl-layout__tab-bar {
+	   display: none;
+	  }
+	}
+
+
+@media screen and (min-width: 541px) {
+	.mdl-layout__drawer-button {
+		display: none;
+	}
+}
+
+
+	
+
 .menuWrapper iframe {
 	position: absolute;
 	top: 0;

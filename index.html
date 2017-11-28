@@ -8,160 +8,170 @@
 	<link rel="stylesheet" href="mdl/material.min.css" />
 	<link rel="stylesheet" href="styles/styles.css" />
 	<script defer src="mdl/material.min.js"></script>
+	<script src="mdl/jquery-3.2.1.min.js"></script>
+	<script src="mdl/custom.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+	
+	<body>
 
 
-<body>
 
 
-	<!-- MDL Fixed Layout Container -->
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<!-- Header Container -->
-		<header class="mdl-layout__header">
-			<div class="mdl-layout__header-row">
-				<!-- Title  of Header -->
+		<!-- MDL Fixed Layout Container -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<!-- Header Container -->
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row">
+					<!-- Title  of Header -->
 
-				<span class="mdl-layout-title">
-					<a href="./index.html">Klausin Valinta</a>
-				</span>
+					<span class="mdl-layout-title">
+						<a href="./index.html">Klausin Valinta</a>
+					</span>
 
 
-				<div class="mdl-layout-spacer"></div>
-				<!-- Navigation -->
+					<div class="mdl-layout-spacer"></div>
+					<!-- Navigation -->
+					<nav class="mdl-navigation">
+
+						<a class="mdl-navigation__link" href="./store.html">Kauppa</a>
+						<a class="mdl-navigation__link" href="./restaurant.html">Ravintola</a>
+					</nav>
+				</div>
+
+
+
+				<!-- Tab Bar Container , and Tab links -->
+
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+					<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Koti</a>
+					<a href="#scroll-tab-2" class="mdl-layout__tab">Yhteystiedot</a>
+					<a href="#scroll-tab-3" class="mdl-layout__tab">UKK</a>
+					<a href="#scroll-tab-4" class="mdl-layout__tab">Linkkejä</a>
+				</div>
+			</header>
+
+
+			<!-- MDL Layout Header -->
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Klausin Valinta</span>
 				<nav class="mdl-navigation">
-
-					<a class="mdl-navigation__link" href="./store.html">Kauppa</a>
-					<a class="mdl-navigation__link" href="./restaurant.html">Ravintola</a>
+					<a class="mdl-navigation__link" href="#scroll-tab-1">Koti</a>
+					<a class="mdl-navigation__link" href="#scroll-tab-2">Yhteystiedot</a>
+					<a class="mdl-navigation__link" href="#scroll-tab-3">UKK</a>
+					<a class="mdl-navigation__link" href="#scroll-tab-4">Linkkejä</a>
 				</nav>
 			</div>
 
+			<main class="mdl-layout__content">
 
+				<!-- "is-active" class to set the default active tab -->
+				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+					<div class="page-content">
 
-			<!-- Tab Bar Container , and Tab links -->
+						<div class="mdl-grid--no-spacing mdl-grid">
+							<div class="mdl-cell--7-col mdl-cell">
+								<div>
+									<h2>Yrityksen Visio</h2>
+									<p>Me Klausin Valinnassa uskomme perunan parantavaan voimaan. Haluammekin siis jakaa ilokokemuksemme koko maailman
+										kanssa kohtuullista korvausta vastaan.
+										<br> Tervetuloa perunoiden maailmaan!</p>
+								</div>
 
-			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-				<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Koti</a>
-				<a href="#scroll-tab-2" class="mdl-layout__tab">Yhteystiedot</a>
-				<a href="#scroll-tab-3" class="mdl-layout__tab">UKK</a>
-				<a href="#scroll-tab-4" class="mdl-layout__tab">Linkkejä</a>
-			</div>
-		</header>
-		<!-- MDL Layout Header -->
-		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
-			<span class="mdl-layout-title">Title</span>
-		</div>
-
-		<main class="mdl-layout__content">
-
-			<!-- "is-active" class to set the default active tab -->
-			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-				<div class="page-content">
-
-					<div class="mdl-grid--no-spacing mdl-grid">
-						<div class="mdl-cell--7-col mdl-cell">
-
-							<div>
-								<h2>Yrityksen Visio</h2>
-								<p>Me Klausin Valinnassa uskomme perunan parantavaan voimaan. Haluammekin siis jakaa ilokokemuksemme koko maailman kanssa
-									kohtuullista korvausta vastaan.
-									<br> Tervetuloa perunoiden maailmaan!</p>
 							</div>
-
 						</div>
+
 					</div>
+				</section>
 
-				</div>
-			</section>
-
-			<!-- Tab No 2-->
-			<section class="mdl-layout__tab-panel" id="scroll-tab-2">
-				<div class="page-content">
-					<div class="mdl-grid--no-spacing mdl-grid">
-						<div class="mdl-cell--7-col mdl-cell">
-							<h2>Yhteystiedot</h2>
-							<div class="demo-list-action mdl-list">
-								<div class="mdl-list__item">
-									<span class="mdl-list__item-primary-content">
-										<i class="material-icons mdl-list__item-avatar">person</i>
-										<span>Toimitusjohtaja</span>
-									</span>
-									<a class="mdl-list__item-secondary-action" href="#">
-										<i class="material-icons">email</i>
-									</a>
-								</div>
-								<div class="mdl-list__item">
-									<span class="mdl-list__item-primary-content">
-										<i class="material-icons mdl-list__item-avatar">person</i>
-										<span>Markkinointivastaava</span>
-									</span>
-									<a class="mdl-list__item-secondary-action" href="#">
-										<i class="material-icons">email</i>
-									</a>
-								</div>
-								<div class="mdl-list__item">
-									<span class="mdl-list__item-primary-content">
-										<i class="material-icons mdl-list__item-avatar">person</i>
-										<span>Myyntivastaava</span>
-									</span>
-									<span class="mdl-list__item-secondary-content">
-										<a class="mdl-list__item-secondary-action" href="#">
+				<!-- Tab No 2-->
+				<section class="mdl-layout__tab-panel" id="scroll-tab-2">
+					<div class="page-content">
+						<div class="mdl-grid--no-spacing mdl-grid">
+							<div class="mdl-cell--7-col mdl-cell">
+								<h2>Yhteystiedot</h2>
+								<div class="yhteystiedot-list-action mdl-list">
+									<div class="mdl-list__item">
+										<span class="mdl-list__item-primary-content">
+											<i class="material-icons mdl-list__item-avatar">person</i>
+											<span>Toimitusjohtaja</span>
+										</span>
+										<a class="mdl-list__item-secondary-action" href="mailto:toimitusjohtaja@perunamail.com">
 											<i class="material-icons">email</i>
 										</a>
-									</span>
+									</div>
+									<div class="mdl-list__item">
+										<span class="mdl-list__item-primary-content">
+											<i class="material-icons mdl-list__item-avatar">person</i>
+											<span>Markkinointivastaava</span>
+										</span>
+										<a class="mdl-list__item-secondary-action" href="mailto:markkinointivastaata@perunamail.com">
+											<i class="material-icons">email</i>
+										</a>
+									</div>
+									<div class="mdl-list__item">
+										<span class="mdl-list__item-primary-content">
+											<i class="material-icons mdl-list__item-avatar">person</i>
+											<span>Myyntivastaava</span>
+										</span>
+										<span class="mdl-list__item-secondary-content">
+											<a class="mdl-list__item-secondary-action" href="mailto:myyntivastaava@perunamail.com">
+												<i class="material-icons">email</i>
+											</a>
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
+				</section>
 
-				</div>
-			</section>
+				<!-- Tab No 3-->
+				<section class="mdl-layout__tab-panel" id="scroll-tab-3">
+					<div class="page-content">
+						<div class="mdl-grid--no-spacing mdl-grid">
+							<div class="mdl-cell--7-col mdl-cell">
+								<h2>Usein kysytyt kysymykset</h2>
 
-			<!-- Tab No 3-->
-			<section class="mdl-layout__tab-panel" id="scroll-tab-3">
-				<div class="page-content">
-					<div class="mdl-grid--no-spacing mdl-grid">
-						<div class="mdl-cell--7-col mdl-cell">
-							<h2>Usein kysytyt kysymykset</h2>
-							<ul style="list-style-type:square">
-								<li>Onko peruna turvallista?</li>
-								<li>Miten valmistaa perunat?</li>
-								<li>Olenko peruna?</li>
-							</ul>
+								<ul style="list-style-type:square">
+									<li>Onko peruna turvallista?</li>
+									<li>Miten valmistaa perunat?</li>
+									<li>Olenko peruna?</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<!-- Tab No 4-->
-			<section class="mdl-layout__tab-panel" id="scroll-tab-4">
-				<div class="page-content">
-					<div class="mdl-grid--no-spacing mdl-grid">
-						<div class="mdl-cell--7-col mdl-cell">
-							<h2>Linkkejä</h2>
-							<ul style="list-style-type:square">
-								<li>
-									<a href="https://fi.wikipedia.org/wiki/Peruna">Peruna (Wikipedia)</a>
-								</li>
-								<li>
-									<a href="http://www.tarhuri.fi/kasvit/peruna/">Peruna kasvatus (tarhuri.fi)</a>
-								</li>
-								<li>
-									<a href="http://www.spk.fi/perunan_historiaa_suomessa">Perunan historia (spk.fi)</a>
-								</li>
-							</ul>
+				<!-- Tab No 4-->
+				<section class="mdl-layout__tab-panel" id="scroll-tab-4">
+					<div class="page-content">
+						<div class="mdl-grid--no-spacing mdl-grid">
+							<div class="mdl-cell--7-col mdl-cell">
+								<h2>Linkkejä</h2>
+								<ul style="list-style-type:square">
+									<li>
+										<a href="https://fi.wikipedia.org/wiki/Peruna">Peruna (Wikipedia)</a>
+									</li>
+									<li>
+										<a href="http://www.tarhuri.fi/kasvit/peruna/">Peruna kasvatus (tarhuri.fi)</a>
+									</li>
+									<li>
+										<a href="http://www.spk.fi/perunan_historiaa_suomessa">Perunan historia (spk.fi)</a>
+									</li>
+								</ul>
+							</div>
 						</div>
+
 					</div>
+				</section>
 
-				</div>
-			</section>
-
-		</main>
+			</main>
 
 
-	</div>
+		</div>
 
-</body>
+	</body>
 
 </html>
