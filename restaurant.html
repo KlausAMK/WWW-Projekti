@@ -13,33 +13,35 @@
 
 
 <body>
-	
-	
+
+
 	<!-- MDL Fixed Layout Container -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<!-- Header Container -->
 		<header class="mdl-layout__header">
 			<div class="mdl-layout__header-row">
 				<!-- Title  of Header -->
-				
-				<span class="mdl-layout-title"><a href="./index.html">Klausin Valinta</a></span>
-	
 
-			<div class="mdl-layout-spacer"></div>
-			<!-- Navigation -->
-			<nav class="mdl-navigation">
-				
-			  <a class="mdl-navigation__link" href="./store.html">Kauppa</a>
-			  <a class="mdl-navigation__link" href="./restaurant.html">Ravintola</a>
-			</nav>
-		  </div>
+				<span class="mdl-layout-title">
+					<a href="./index.html">Klausin Valinta</a>
+				</span>
 
-			
-			
+
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation -->
+				<nav class="mdl-navigation">
+
+					<a class="mdl-navigation__link" href="./store.html">Kauppa</a>
+					<a class="mdl-navigation__link" href="./restaurant.html">Ravintola</a>
+				</nav>
+			</div>
+
+
+
 			<!-- Tab Bar Container , and Tab links -->
 
 			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-				<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Koti</a>
+				<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Menu</a>
 				<a href="#scroll-tab-2" class="mdl-layout__tab">Yhteystiedot</a>
 				<a href="#scroll-tab-3" class="mdl-layout__tab">UKK</a>
 				<a href="#scroll-tab-4" class="mdl-layout__tab">Linkkejä</a>
@@ -51,6 +53,16 @@
 		</div>
 
 		<main class="mdl-layout__content">
+
+			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+				<div class="page-content">
+					<div class="menuWrapper">
+						<iframe src="./menu.html" frameborder="no" scrolling="no"></iframe>
+					</div>
+
+
+				</div>
+			</section>
 
 		</main>
 	</div>
