@@ -1,6 +1,11 @@
 /* the background image*/
-body {
+/*body {
     background-image: url("../img/potato.png")
-}
+}*/
 
+
+.mdl-cell {
+    padding: 20px;
+    background-color: #f3f3f3;
+}
 

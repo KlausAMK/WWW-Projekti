@@ -12,29 +12,31 @@
 
 
 <body>
-	
-	
+
+
 	<!-- MDL Fixed Layout Container -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<!-- Header Container -->
 		<header class="mdl-layout__header">
 			<div class="mdl-layout__header-row">
 				<!-- Title  of Header -->
-				
-				<span class="mdl-layout-title"><a href="./index.html">Klausin Valinta</a></span>
-	
 
-			<div class="mdl-layout-spacer"></div>
-			<!-- Navigation -->
-			<nav class="mdl-navigation">
-				
-			  <a class="mdl-navigation__link" href="">Kauppa</a>
-			  <a class="mdl-navigation__link" href="">Ravintola</a>
-			</nav>
-		  </div>
+				<span class="mdl-layout-title">
+					<a href="./index.html">Klausin Valinta</a>
+				</span>
 
-			
-			
+
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation -->
+				<nav class="mdl-navigation">
+
+					<a class="mdl-navigation__link" href="">Kauppa</a>
+					<a class="mdl-navigation__link" href="">Ravintola</a>
+				</nav>
+			</div>
+
+
+
 			<!-- Tab Bar Container , and Tab links -->
 
 			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
@@ -54,22 +56,62 @@
 			<!-- "is-active" class to set the default active tab -->
 			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
 				<div class="page-content">
-					<h2>Yrityksen Visio</h2>
-					<p>Me Klausin Valinnassa uskomme perunan parantavaan voimaan. Haluammekin siis jakaa ilokokemuksemme koko maailman kanssa
-						kohtuullista korvausta vastaan.
-						<br> Tervetuloa perunoiden maailmaan!</p>
+
+					<div class="mdl-grid--no-spacing mdl-grid">
+						<div class="mdl-cell--7-col mdl-cell">
+							<div>
+								<div>
+									<h2>Yrityksen Visio</h2>
+									<p>Me Klausin Valinnassa uskomme perunan parantavaan voimaan. Haluammekin siis jakaa ilokokemuksemme koko maailman
+										kanssa kohtuullista korvausta vastaan.
+										<br> Tervetuloa perunoiden maailmaan!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</section>
 
 			<!-- Tab No 2-->
 			<section class="mdl-layout__tab-panel" id="scroll-tab-2">
 				<div class="page-content">
-					<h2>Yhteystiedot</h2>
-					<ul style="list-style-type:square">
-						<li>Toimitusjohtaja, toimitusjohtaja@perunamail.com</li>
-						<li>Markkinointivastaava, markkinat@perunamail.com</li>
-						<li>Myyntivastaava, myynnit@perunamail.com </li>
-					</ul>
+					<div class="mdl-grid--no-spacing mdl-grid">
+						<div class="mdl-cell--7-col mdl-cell">
+							<h2>Yhteystiedot</h2>
+							<div class="demo-list-action mdl-list">
+								<div class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-avatar">person</i>
+										<span>Toimitusjohtaja</span>
+									</span>
+									<a class="mdl-list__item-secondary-action" href="#">
+										<i class="material-icons">email</i>
+									</a>
+								</div>
+								<div class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-avatar">person</i>
+										<span>Markkinointivastaava</span>
+									</span>
+									<a class="mdl-list__item-secondary-action" href="#">
+										<i class="material-icons">email</i>
+									</a>
+								</div>
+								<div class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-avatar">person</i>
+										<span>Myyntivastaava</span>
+									</span>
+									<span class="mdl-list__item-secondary-content">
+										<a class="mdl-list__item-secondary-action" href="#">
+											<i class="material-icons">email</i>
+										</a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</section>
@@ -77,37 +119,45 @@
 			<!-- Tab No 3-->
 			<section class="mdl-layout__tab-panel" id="scroll-tab-3">
 				<div class="page-content">
-					<h2>Usein kysytyt kysymykset</h2>
-					<ul style="list-style-type:square">
-						<li>Onko peruna turvallista?</li>
-						<li>Miten valmistaa perunat?</li>
-						<li>Olenko peruna?</li>
-					</ul>
-
+					<div class="mdl-grid--no-spacing mdl-grid">
+						<div class="mdl-cell--7-col mdl-cell">
+							<h2>Usein kysytyt kysymykset</h2>
+							<ul style="list-style-type:square">
+								<li>Onko peruna turvallista?</li>
+								<li>Miten valmistaa perunat?</li>
+								<li>Olenko peruna?</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- Tab No 4-->
 			<section class="mdl-layout__tab-panel" id="scroll-tab-4">
 				<div class="page-content">
-					<h2>Linkkejä</h2>
-					<ul style="list-style-type:square">
-						<li>
-							<a href="https://fi.wikipedia.org/wiki/Peruna">Peruna (Wikipedia)</a>
-						</li>
-						<li>
-							<a href="http://www.tarhuri.fi/kasvit/peruna/">Peruna kasvatus (tarhuri.fi)</a>
-						</li>
-						<li>
-							<a href="http://www.spk.fi/perunan_historiaa_suomessa">Perunan historia (spk.fi)</a>
-						</li>
-					</ul>
+					<div class="mdl-grid--no-spacing mdl-grid">
+						<div class="mdl-cell--7-col mdl-cell">
+							<h2>Linkkejä</h2>
+							<ul style="list-style-type:square">
+								<li>
+									<a href="https://fi.wikipedia.org/wiki/Peruna">Peruna (Wikipedia)</a>
+								</li>
+								<li>
+									<a href="http://www.tarhuri.fi/kasvit/peruna/">Peruna kasvatus (tarhuri.fi)</a>
+								</li>
+								<li>
+									<a href="http://www.spk.fi/perunan_historiaa_suomessa">Perunan historia (spk.fi)</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
 				</div>
 			</section>
 
-
 		</main>
+
+
 	</div>
 
 </body>
