@@ -14,11 +14,10 @@
 
 
 	<body>
-
 		<!-- MDL Fixed Layout Container -->
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 			<!-- Header Container -->
-			<header class="mdl-layout__header">
+			<header class="mdl-layout__header main-header">
 				<div class="mdl-layout__header-row">
 					<!-- Title  of Header -->
 
@@ -60,13 +59,28 @@
 				</nav>
 			</div>
 
+
+			<style>
+				.mdl-layout__content {
+					background-image: url(./img/potato.png);
+					position: relative;
+					background-repeat: no-repeat;
+					background-attachment: scroll;
+					background-position: center center;
+					background-size: cover;
+
+				}
+			</style>
+
+
+
 			<main class="mdl-layout__content">
 
 				<!-- "is-active" class to set the default active tab -->
 				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
 					<div class="page-content">
 
-						<div class="mdl-grid--no-spacing mdl-grid">
+							<div class="mdl-grid mdl-cell mdl-cell--4-col  mdl-card mdl-shadow--4dp">
 							<div class="mdl-cell--7-col mdl-cell">
 								<div>
 									<h2>Yrityksen Visio</h2>
@@ -84,8 +98,8 @@
 				<!-- Tab No 2-->
 				<section class="mdl-layout__tab-panel" id="scroll-tab-2">
 					<div class="page-content">
-						<div class="mdl-grid--no-spacing mdl-grid">
-							<div class="mdl-cell--7-col mdl-cell">
+							<div class="mdl-grid mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+							<div class="mdl-cell--10-col mdl-cell">
 								<h2>Yhteystiedot</h2>
 								<div class="yhteystiedot-list-action mdl-list">
 									<div class="mdl-list__item">
@@ -127,8 +141,8 @@
 				<!-- Tab No 3-->
 				<section class="mdl-layout__tab-panel" id="scroll-tab-3">
 					<div class="page-content">
-						<div class="mdl-grid--no-spacing mdl-grid">
-							<div class="mdl-cell--7-col mdl-cell">
+							<div class="mdl-grid mdl-cell mdl-cell--4-col  mdl-card mdl-shadow--4dp">
+							<div class="mdl-cell--10-col mdl-cell">
 								<h2>Usein kysytyt kysymykset</h2>
 
 								<ul style="list-style-type:square">
@@ -144,8 +158,8 @@
 				<!-- Tab No 4-->
 				<section class="mdl-layout__tab-panel" id="scroll-tab-4">
 					<div class="page-content">
-						<div class="mdl-grid--no-spacing mdl-grid">
-							<div class="mdl-cell--7-col mdl-cell">
+							<div class="mdl-grid mdl-cell mdl-cell--4-col  mdl-card mdl-shadow--4dp">
+							<div class="mdl-cell--4-col mdl-cell">
 								<h2>Linkkejä</h2>
 								<ul style="list-style-type:square">
 									<li>
@@ -168,7 +182,6 @@
 
 
 		</div>
-
 	</body>
 
 </html>

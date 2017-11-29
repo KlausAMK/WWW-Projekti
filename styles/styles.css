@@ -1,12 +1,12 @@
-/* the background image*/
-/*body {
-    background-image: url("../img/potato.png")
-}*/
-
-
 .mdl-cell {
     padding: 20px;
-    background-color: #f3f3f3;
+	background-color: #f3f3f3;
+	min-width: 300px
+}
+
+
+.mdl-grid {
+	min-width: 300px
 }
 
 
