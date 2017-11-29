@@ -1,4 +1,46 @@
+#home-title{
+	color:rgb(255, 255, 255); 
+	text-decoration:none
+}
+
+
+#home-content {
+	background-image: url(../img/potato_opt.png);
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+
+}
+
+
+#menu-content {
+	background-image: url(../img/potato-bg_opt.jpg);
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+
+}
+
+
+#menu {
+
+	margin: auto;
+	margin-top: 20px;	
+	margin-bottom: 20px;	
+	min-width: 300px;
+	height: 70em;
+	opacity: 0.87;
+}
+
+
+
+
 .mdl-cell {
+	
     padding: 20px;
 	background-color: #f3f3f3;
 	min-width: 300px;
