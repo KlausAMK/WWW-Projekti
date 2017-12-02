@@ -26,6 +26,14 @@
 }
 
 
+#tuote-content {
+	background-image: url(../img/Peruna_opt.jpg);
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+
 #menu {
 
 	margin: auto;
